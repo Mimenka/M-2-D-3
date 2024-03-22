@@ -39,20 +39,31 @@
 # student1.get_grade()
 
 # 3.
-class Teacher:
-    def __init__(self, name, subject) -> None:
-        self.name = name
-        self.subject = subject
+# class Teacher:
+#     def __init__(self, name, subject) -> None:
+#         self.name = name
+#         self.subject = subject
     
-    def info(self):
-        print(f'{self.name}Предмет преподования: {self.subject}')
+#     def info(self):
+#         print(f'{self.name} Предмет преподования: {self.subject}')
 
-class TeacherMath(Teacher):
-    pass
-class TeacherLang(Teacher):
-    pass
+# class TeacherMath(Teacher):
+#     pass
+# class TeacherLang(Teacher):
+#     pass
     
-teacher_math = TeacherMath(name='Фибоначи', subject='Математика')
-teacher_lang = TeacherLang(name='Гвидо Ван Рассум',subject='Python')
-teacher_math.info()
-teacher_lang.info()
+# teacher_math = TeacherMath(name='Фибоначи', subject='Математика')
+# teacher_lang = TeacherLang(name='Гвидо Ван Рассум',subject='Python')
+# teacher_math.info()
+# teacher_lang.info()
+
+# 4.
+class Vehicle:
+    def __init__(self, mark, model) -> None:
+        self.mark = mark
+        self.model = model
+    def start_engine(self):
+        print(f'{self.mark}-{self.model} заводись')
+
+mers = Vehicle(mark='Tayota', model='Camry')
+mers.start_engine()
